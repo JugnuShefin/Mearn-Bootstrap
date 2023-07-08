@@ -1,53 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-        .nav-link:hover{
-            color: purple;
-            text-underline-position: below;
-            
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    .nav-link:hover {
+      color: #5e068a;
+      /* text-underline-position: below; */
+    }
+
+    .btn {
+      height: 60px;
+      width: 180px;
+      background-color: #5e068a;
+      color: white;
+      border-radius: 30px;
+    }
+
+    .btn:hover {
+      background-color: #9e6ab9;
+    }
+
+    img {
+      height: 480px;
+    }
+
+    .btnModal {
+      height: 36px;
+      width: 137px;
+      background-color: #5e068a;
+      color: white;
+    }
+
+    .btnModal:hover {
+      background-color: #7b3b9c;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption .h {
+      position: relative;
+      animation: SlideUp forwards ease 1s infinite;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption .para {
+      position: relative;
+      animation: SlideUp forwards ease 1s infinite;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption .btn {
+      position: relative;
+      animation: SlideUp forwards ease 1s infinite;
+    }
+
+    @keyframes SlideUp {
+      0% {
+        left: 0px;
+        top: 100px;
+      }
+
+      100% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: white;">
-        <div class="container">
-          <img src="./images/luminarlogo.jpg" alt="" style="height: 70px;">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 me-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" style="color: purple;" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-underline-dark fw-bold" href="#">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Placements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+  <nav class="navbar navbar-expand-lg" style="background-color: white;">
+    <div class="container">
+      <img src="./images/luminarlogo.jpg" alt="" style="height: 70px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 me-1 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" style="color: #5e068a;" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-underline-dark fw-bold" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">Placements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="margin-top: -60px;">
+        <img src="./images/Carousel1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block left carousel-control text-start ms-1">
+          <h1 class="h mb-5">Kerala's No.1 IT Finishing School<br>
+            100% Placement Assistance
+          </h1>
+          <p class=" para mt-4">We at LUMINAR TECHNOLAB offers best software training and placement in emerging<br>
+            technologies like BIG DATA, Data Science, Machine Learning, PYTHON, Software Testing.</p>
+          <button class="btn mt-4">VIEW COURSES</button>
         </div>
-      </nav>
+      </div>
+      <div class="carousel-item" style="margin-top: -60px;">
+        <img src="./images/Carousel2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block  text-start ms-1">
+          <h1 class=" h mb-5">Data Science, ML & AI<br>Big Data - Hadoop & Spark<br>Python Data Science</h1>
+          <p class=" para mt-4">We at LUMINAR TECHNOLAB offers best software training and placement in emerging<br>
+            technologies like BIG DATA, Hadoop, Spark, Data Science, Machine Learning, Deep Learning<br>
+            and AI.</p>
+          <button class="btn mt-4">VIEW COURSES</button>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-#5e068a mt-4 mb-4 ms-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ms-5 me-5 border-0">
+          <h1 class="modal-title fs-5 mb-3 mt-1" id="exampleModalLabel">Get Training Quote for free</h1>
+          <form action="">
+            <input type="text" placeholder="Name" style="border: white; width: 100%;"><br>
+            <hr>
+            <input type="Email" placeholder="Email" style="border: white; width: 100%;"><br>
+            <hr>
+            <input type="tel" placeholder="Phone Number" style="border: white; width: 100%;"><br>
+            <hr>
+            <select style="border: white; width: 100%">
+              <option selected="true" disabled="disabled">Select Course interested in</option>
+              <option>Data Science - ML - AI - Big Data with Cloud</option>
+              <option>Python Django - Angular - Full Stack</option>
+              <option>Software Testing Specialist</option>
+              <option>MEARN Stack Web Development Expert - Angular</option>
+              <option>Android Developer Expert Training In Kochi</option>
+              <option>Business Analytics - Power BI & Tableau</option>
+              <option>DATA SCIENCE - ML - AI - & TABLEAU</option>
+            </select><br>
+            <hr>
+            <input type="text" placeholder="City" style="border: white; width: 100%;"><br>
+            <hr>
+            <textarea name="" id="" cols="46" rows="4" style="border: white;">Comments</textarea><br>
+            <hr>
+            <button type="button" class="btnModal btn-#5e068a mt-3" style="border: white;">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
